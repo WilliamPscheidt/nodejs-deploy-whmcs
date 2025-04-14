@@ -56,7 +56,7 @@ Este projeto integra o sistema de billing WHMCS com uma API backend em Node.js p
 ### Backend (Node.js)
 
 ```bash
-git clone https://github.com/seuusuario/whmcs-nodejs-deployer.git
+git clone https://github.com/WilliamPscheidt/nodejs-deploy-whmcs/
 cd whmcs-nodejs-deployer
 npm install
 node index.js
