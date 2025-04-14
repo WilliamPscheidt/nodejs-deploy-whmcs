@@ -1,8 +1,8 @@
 const express = require('express');
+const deployController = require('../controllers/deploy.controller')
+
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send("Funcionando /deploy/")
-})
+router.get('/', deployController.deploy)
 
 module.exports = router
