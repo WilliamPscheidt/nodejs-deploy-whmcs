@@ -1,8 +1,7 @@
 const express = require('express');
+const terminateController = require('../controllers/terminate.controller')
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send("Funcionando /terminate")
-})
+router.post('/', terminateController.terminate)
 
 module.exports = router

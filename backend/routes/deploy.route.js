@@ -3,6 +3,6 @@ const deployController = require('../controllers/deploy.controller')
 
 const router = express.Router();
 
-router.get('/', deployController.deploy)
+router.post('/', deployController.deploy)
 
 module.exports = router
