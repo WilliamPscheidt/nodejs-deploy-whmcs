@@ -1,11 +1,11 @@
 
-# 🚀 Deploy Automático de Aplicações Node.js via WHMCS + Docker + NGINX
+# Deploy Automático de Aplicações Node.js via WHMCS + Docker + NGINX
 
 Este projeto integra o sistema de billing WHMCS com uma API backend em Node.js para realizar o **deploy automatizado de aplicações Node.js a partir de repositórios GitHub** em containers Docker. O sistema configura automaticamente o NGINX, redireciona o domínio/subdomínio informado pelo cliente e exibe **logs em tempo real via WebSocket**.
 
 ---
 
-## 📦 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Node.js
 - Docker
@@ -20,17 +20,17 @@ Este projeto integra o sistema de billing WHMCS com uma API backend em Node.js p
 
 ## ⚙️ Funcionalidades
 
-- 📦 Deploy automático de apps Node.js a partir de repositórios GitHub
-- 🌐 Atribuição de domínio ou subdomínio ao container
-- 📄 Geração automática de config NGINX + reload
-- 🔐 Suporte a autenticação via token do GitHub
-- 🧠 Definição da versão do Node.js utilizada
-- 🧹 Limpeza completa de containers, arquivos e config nginx no cancelamento
-- 🖥️ Visualização de logs em tempo real via WebSocket no painel do WHMCS
+- Deploy automático de apps Node.js a partir de repositórios GitHub
+- Atribuição de domínio ou subdomínio ao container
+- Geração automática de config NGINX + reload
+- Suporte a autenticação via token do GitHub
+- Definição da versão do Node.js utilizada
+- Limpeza completa de containers, arquivos e config nginx no cancelamento
+- Visualização de logs em tempo real via WebSocket no painel do WHMCS
 
 ---
 
-## 🧪 Fluxo de Funcionamento
+## Fluxo de Funcionamento
 
 1. O cliente faz um pedido via WHMCS e preenche:
    - Repositório GitHub
@@ -51,7 +51,7 @@ Este projeto integra o sistema de billing WHMCS com uma API backend em Node.js p
 
 ---
 
-## 🛠️ Instalação
+## Instalação
 
 ### Backend (Node.js)
 
@@ -67,7 +67,7 @@ node index.js
 
 --- 
 
-## 📡 Endpoints disponíveis
+## Endpoints disponíveis
 
 | Método | Rota        | Descrição                     |
 |--------|-------------|-------------------------------|
@@ -80,7 +80,7 @@ node index.js
 
 ---
 
-## 🧠 Exemplo de Payload `/deploy`
+## Exemplo de Payload `/deploy`
 
 ```json
 {
@@ -94,7 +94,7 @@ node index.js
 
 ---
 
-## 💡 Requisitos
+## Requisitos
 
 - Docker instalado
 - NGINX instalado e configurado para ler arquivos `.conf` em `/etc/nginx/conf.d/`
@@ -103,17 +103,6 @@ node index.js
 
 ---
 
-## 🔐 Segurança
-
-- Tokens do GitHub são enviados de forma segura via JSON
-- Cada container é isolado por `orderId`
-- Portas são geradas dinamicamente evitando conflitos
-
----
-
-## 🧑‍💻 Contribuindo
-
-Pull requests são bem-vindos! Para grandes mudanças, por favor abra uma issue primeiro para discutir o que você gostaria de alterar.
 
 ---
 
